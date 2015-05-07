@@ -52,8 +52,8 @@ x0 = 0; y0 = 0;
 xf = 1; yf = 1;
 theta0 = pi/4;
 thetaf = pi/4;
-bounds.lower.events = [x0; y0; theta0; x0; yf; theta0];
-bounds.upper.events = [x0; y0; theta0; xf; yf; thetaf];
+bounds.lower.events = [x0; y0; theta0; xf; yf; thetaf];
+bounds.upper.events = bounds.lower.events;
 
 
 dubinsVeh.cost 	   = 'costFun';
