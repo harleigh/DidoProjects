@@ -40,10 +40,10 @@ bounds.lower.controls = [omegaL];
 bounds.upper.controls = [omegaU];
 
 
-%set the bounds for the initial and final time.
+%set the bounds for the initial and final time.  Fixed start and end time
 t0 = 0;  tf = 50;
 bounds.lower.time = [t0; tf];				
-bounds.upper.time = [t0; tf];
+bounds.upper.time = bounds.lower.time;
 
 
 %Endpoint constraint (i.e.: 'e' in the problem formulation).  We start and end at a
